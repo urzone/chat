@@ -1933,16 +1933,16 @@
                     <svg width="24" height="24">
                         <use xlink:href="#addIcon" />
                     </svg>
-                    <span>新建会话</span>
+                    <span>New conversation</span>
                 </div>
-                <div id="newFolder" title="新建文件夹">
+                <div id="newFolder" title="New folder">
                     <svg width="24" height="24">
                         <use xlink:href="#newFolderIcon" />
                     </svg>
                 </div>
             </div>
             <div class="extraChat">
-                <input type="text" id="searchChat" placeholder="搜索" />
+                <input type="text" id="searchChat" placeholder="Search" />
                 <div id="clearSearch">
                     <svg width="24" height="24">
                         <use xlink:href="#closeIcon" />
@@ -1955,27 +1955,27 @@
             </div>
             <div class="navFooter">
                 <div class="navFunc">
-                    <div id="clearChat" title="清空">
+                    <div id="clearChat" title="Clear all">
                         <svg width="24" height="24">
                             <use xlink:href="#clearAllIcon" />
                         </svg>
                     </div>
-                    <div id="toggleLight" title="浅色">
+                    <div id="toggleLight" title="Light color">
                         <svg width="24" height="24">
                             <use xlink:href="#lightThemeIcon" />
                         </svg>
                     </div>
-                    <div id="sysSetting" title="设置">
+                    <div id="sysSetting" title="Settings">
                         <svg width="24" height="24">
                             <use xlink:href="#settingIcon" />
                         </svg>
                     </div>
                 </div>
                 <div class="divider"></div>
-                <div class="links">
+<!--                 <div class="links">
                     <a href="https://github.com/xqdoo00o/chatgpt-web" target="_blank"
                         rel="noopener noreferrer">Github</a>
-                </div>
+                </div> -->
             </div>
         </nav>
         <div class="mainContent">
@@ -1987,14 +1987,14 @@
                 </div>
                 <div class="title"><span>ChatGPT</span></div>
                 <div class="settings">
-                    <button class="setBtn" id="toggleFull" title="全屏">
+                    <button class="setBtn" id="toggleFull" title="Full screen">
                         <svg width="30" height="30">
                             <use xlink:href="#expandFullIcon" />
                         </svg>
                     </button>
                     <button class="setBtn" id="setting">
                         <svg viewBox="0 0 100 100" width="30" height="30">
-                            <title>设置</title>
+                            <title>Settings</title>
                             <circle cx="50" cy="20" r="10" fill="#e15b64" />
                             <circle cx="50" cy="50" r="10" fill="#f8b26a" />
                             <circle cx="50" cy="80" r="10" fill="#99c959" />
@@ -2003,13 +2003,13 @@
                 </div>
                 <div id="setDialog" style="display:none;">
                     <div class="setSwitch">
-                        <div data-id="convOption" class="activeSwitch">对话</div>
-                        <div data-id="speechOption">语音合成</div>
-                        <div data-id="recOption">语音识别</div>
+                        <div data-id="convOption" class="activeSwitch">Conversation</div>
+                        <div data-id="speechOption">Speech synthesis</div>
+                        <div data-id="recOption">Speech recognition</div>
                     </div>
                     <div id="convOption">
                         <div class="presetSelect presetModelCls">
-                            <label for="preSetModel">GPT模型</label>
+                            <label for="preSetModel">GPT model</label>
                             <select id="preSetModel">
                                 <option value="gpt-3.5-turbo">gpt-3.5</option>
                                 <option value="gpt-4">gpt-4</option>
@@ -2017,7 +2017,7 @@
                             </select>
                         </div>
                         <div>
-                            <div>用户头像</div>
+                            <div>User avatar</div>
                             <div class="avatarDetail">
                                 <img id="setAvatarPre" src="" />
                                 <input class="inputTextClass" type="text" id="setAvatar" />
@@ -2025,19 +2025,19 @@
                         </div>
                         <div>
                             <div class="justSetLine presetSelect">
-                                <div>系统角色</div>
+                                <div>System role</div>
                                 <div>
-                                    <label for="preSetSystem">预设角色</label>
+                                    <label for="preSetSystem">Default role</label>
                                     <select id="preSetSystem">
-                                        <option value="">默认</option>
-                                        <option value="normal">助手</option>
-                                        <option value="cat">猫娘</option>
-                                        <option value="emoji">表情</option>
-                                        <option value="image">有图</option>
+                                        <option value="">Default</option>
+                                        <option value="normal">Assistant</option>
+                                        <option value="cat">Catgirl</option>
+                                        <option value="emoji">Emoji</option>
+                                        <option value="image">Image</option>
                                     </select>
                                 </div>
                             </div>
-                            <textarea class="inputTextClass areaTextClass" placeholder="你是一个乐于助人的助手，尽量简明扼要地回答"
+                            <textarea class="inputTextClass areaTextClass" placeholder="You are a helpful assistant who aims to provide concise and brief answers."
                                 id="systemInput"></textarea>
                         </div>
                         <div>
@@ -4281,7 +4281,7 @@
             })
         };
         clearChatSet.onclick = clearChat.onclick = () => {
-            if (confirmAction("是否清空所有会话和文件夹?")) {
+            if (confirmAction("Would you like to clear all conversations and folders?")) {
                 chatsData.length = 0;
                 chatIdxs.length = 0;
                 folderData.length = 0;
