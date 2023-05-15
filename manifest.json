@@ -1,15 +1,15 @@
 {
-  "name": "ChatGPT",
-  "short_name": "ChatGPT",
-  "description": "简洁而强大的ChatGPT应用",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#edeff2",
-  "icons": [
-    {
-      "src": "icon.png",
-      "sizes": "144x144",
-      "type": "image/png"
-    }
-  ]
+    "name": "Chat GPT Simple APP",
+    "short_name": "Chat GPT",
+    "icons": [
+        {
+            "src": "icon-192x192.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "./index.html",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
 }
